@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Final Front</title>
 
     <link
       rel="stylesheet"
@@ -17,35 +17,40 @@
 
   <body>
     <header>
-      <img src="imagenes/logo.svg" alt="Logo" />
+      <h1>
+        <img src="imagenes/logo.svg" alt="Logo Sportit " />
+      </h1>
       <i class="fas fa-bars kangrebur"></i>
       <nav>
         <ul>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Trainning</a></li>
-          <li><a href="#">Community</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#trainning">Trainning</a></li>
+          <li><a href="#community">Community</a></li>
         </ul>
       </nav>
-      <a class="contacto" href="#">Contact</a>
+      <a class="contacto" href="#contacto">Contact</a>
+      
     </header>
 
     <main>
-      <section class="main-titulo">
-        <img src="imagenes/padel-intro.png" alt="Tenista jugando" />
-        <div>
-          <h1>
-            <span
-              >LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</span
-            >
-          </h1>
-          <p>
-            The final Open of the 2022 World Padel Tour season is underway,
-            don't miss out on any of the action!
-          </p>
-          <a class="contacto" href="#">Contact</a>
-        </div>
+      <section class="main-envivo">
+        <article class="imagen-tenista">
+          <img src="imagenes/padel-intro.png" alt="Tenista jugando" />
+        </article>
+        <article class="contenido-envivo">
+          <h2>
+            <span>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</span>
+          </h2>
+          <div>
+            <p>
+              The final Open of the 2022 World Padel Tour season is underway,
+              don't miss out on any of the action!
+            </p>
+            <a class="contacto" href="#">Contact</a>
+          </div>
+        </article>
       </section>
 
       <section class="main-informativo">
@@ -184,8 +189,8 @@
 
       <section class="footer-form-copy">
         <article class="footer-form">
-            <form>
-                <input type="email" id="email" name="email" placeholder="Update in your inbox..." required>
+            <form action="" method="POST">
+                <input type="email" id="email" name="email" placeholder="Update in your inbox...">
                 <button type="submit">Go</button>
               </form>
         </article>
