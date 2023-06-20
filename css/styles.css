@@ -212,19 +212,26 @@ header nav ul li{
     align-items: center;
 }
 
-.main-equipo{
-    height: 224px;
+.main-equipo {
+    height: 200px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--colorPrimario1);
-    
 }
 
 .main-equipo h2{
     color:#FFFFFF;
-    font-size: 30px;
-    
-    padding: 40px 60px;
-   
+    font-size: 34px;
+    width: 393px;
+    height: 96px;
+}
+
+.main-boton-goforit a{
+    background-color: #FFFFFF;
+    color: #8B48BF;
+    font-weight: 500;
+    font-size: 13.1806px;
 }
 
 footer{
