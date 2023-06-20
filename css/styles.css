@@ -82,7 +82,6 @@ main{
 .contenido-envivo{
     flex-basis: 50%;
     width: 450px;
-    height: 399px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -114,42 +113,42 @@ main{
     color: #000000;;
 }
 
-.main-informativo{
+.main-diferencias{
     background-color: var(--colorPrimario1);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 30px 220px;
+    align-items: center;
+    padding: 40px 220px;
     width: 100%;
     color: #FFFFFF;
-    
 }
 
-.main-informativo h2{
-    font-size: 30px;
+.main-diferencias h2{
+    font-size: 36px;
     font-weight: 700px;
     flex-basis: 50%;
+    line-height: 41.26px;
+    padding: 10px 30px;
 }
 
-.main-informativo p{
+.main-diferencias p{
     flex-basis: 50%;
     font-weight: 500px;
+    line-height: 151.1%;
+    padding: 10px 30px;
+    text-align: justify;
 }
 
-.main-cards{
-    display: flex;
-    padding: 40px 120px;  
-    background-color: #FAFAFA;  
-    width: 100%;
-    height: 428px
-    
-}
-.container_card{
+.main-points{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
+    padding: 40px 120px;  
+    background-color: #FAFAFA;  
+    width: 100%;
 }
+
 
 .card{
     display: flex;
@@ -159,13 +158,25 @@ main{
     padding: 20px;
 }
 
-.card-text h4 {
-    margin: 10px;
-    color: #323851;
+.card-text{
+    padding: 15px 20px;
 }
+
+.card-text h4 {
+    color: #323851;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.015em;;
+}
+
 .card-text p {
-    margin: 10px;
+    margin-top: 20px;
     color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
 }
 
 .circle{
@@ -184,22 +195,20 @@ main{
     color: #FFFFFF;
 }
 
-.main-subtitulo{
+.top-tenistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-be;
+    padding: 20px;
+}
+.main-subtitulo {
     color: #242E53;
     Height: 61px;
     font-size: 39.21px;
     text-align: center;
     padding:20px;
     font-weight:700;
-}
-
-
-.top-tenistas{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 300px;
-    padding: 20px;
+    align-self: center;
 }
 .card-tenista{
     background-color: #f3f3f3;
@@ -230,11 +239,7 @@ main{
     padding: 20px;
 }
 
-.ver-mas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .main-equipo {
     height: 200px;
