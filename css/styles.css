@@ -198,38 +198,47 @@ main{
 .top-tenistas{
     display: flex;
     flex-direction: column;
-    justify-content: space-be;
+    justify-content: space-between;
     padding: 20px;
 }
 .main-subtitulo {
     color: #242E53;
-    Height: 61px;
     font-size: 39.21px;
     text-align: center;
-    padding:20px;
+    padding:50px;
     font-weight:700;
-    align-self: center;
+    line-height: 61.41px;
+    letter-spacing: -0.01em;
+    margin: 50px;
 }
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-tenista{
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     flex-basis: 30%;
-    position: relative;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
+
+
 .card-tenista img{
-    position: absolute;
+    position: ;
 }
 
 .card-tenista h3 {
     font-size: 16.1px;
-    color: #3F4868;
-    text-align: center;
-    
+    color: #242E53;;
+    line-height: 25.17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 .card-tenista p {
@@ -237,23 +246,34 @@ main{
     color: #B9B9C1;
     text-align: center;
     padding: 20px;
+    font-weight: 500;
+    line-height: 25.06px;
 }
 
-
+.boton-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 40px;
+}
 
 .main-equipo {
-    height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--colorPrimario1);
+    padding: 80px 150px;
 }
 
 .main-equipo h2{
     color:#FFFFFF;
-    font-size: 34px;
-    width: 393px;
+    font-size: 40px;
+    width: 399px;
     height: 96px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.005em;
 }
 
 .main-boton-goforit a{
@@ -261,13 +281,12 @@ main{
     color: #8B48BF;
     font-weight: 500;
     font-size: 13.1806px;
+    line-height: 19px;
 }
 
 footer{
     background-color: #1E1E26;
     display: flex;
-    width: 100%;
-    height: 250px;
     justify-content: space-evenly;
     max-width: 1440px;
 }
@@ -276,9 +295,6 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    padding-left: 10    0px;
-    
 }
 
 .footer-redes img {
@@ -286,13 +302,11 @@ footer{
 }
 
 .footer-navegacion {
-    columns: 2;
-    column-gap: 20px; /* Espacio entre las columnas */
+    columns: 2;/* Espacio entre las columnas */
   }
   
   .footer-lista1 ul,
   .footer-lista2 ul {
-    margin: 20%px;
     padding: 50px;
     list-style: none;
 }
@@ -302,18 +316,18 @@ footer{
     padding: 10px;
     color: #FFFFFF;
     font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
 }
 
 .footer-form-copy{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .footer-form input{
-    width: 201px;
-    height: 44px;
     border-radius: 50px;
     font-size: 13.18px;
     padding: 20px;
@@ -333,5 +347,6 @@ footer{
 .footer-copyright h6{
     font-size: 12.5px;
     font-weight: 500;
-    color: #8C8C94;;
+    color: #8C8C94;
+    line-height: 18px;
 }
