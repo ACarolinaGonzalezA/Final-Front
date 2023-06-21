@@ -139,6 +139,10 @@ main{
     text-align: justify;
 }
 
+.parrafo-mobile{
+    display: none;
+}
+
 .main-points{
     display: flex;
     justify-content: space-evenly;
@@ -216,6 +220,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;    
 }
 
 .card-tenista{
@@ -224,13 +229,16 @@ main{
     flex-direction: column;
     align-items: center;
     flex-basis: 30%;
-    padding-top: 80px;
+    position: relative;
+    padding-top: 30px;
 }
 
 
 
 .card-tenista img{
-    position: ;
+    position: absolute;
+    top: -45px;
+    width: 70px;
 }
 
 .card-tenista h3 {
@@ -303,10 +311,10 @@ footer{
 
 .footer-navegacion {
     columns: 2;/* Espacio entre las columnas */
-  }
-  
-  .footer-lista1 ul,
-  .footer-lista2 ul {
+}
+
+.footer-lista1 ul,
+.footer-lista2 ul {
     padding: 50px;
     list-style: none;
 }
@@ -349,4 +357,70 @@ footer{
     font-weight: 500;
     color: #8C8C94;
     line-height: 18px;
+}
+
+.contacto:hover{
+    background-color: rgba(139, 72, 191, 0.7); 
+}
+
+
+@media screen and (max-width: 480px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 56px;
+    }
+    header nav {
+        display: none;
+    }
+    .kangrebur {
+        display: flex;
+        font-size: 50px;
+    }
+    header .contacto{
+        display: none;
+    }
+
+    main{
+        max-width: 480px;
+    }
+
+    .main-envivo{
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        
+    }
+    .main-envivo img {
+        width: 400px;
+        height: 341.53px;
+    }
+
+    .contenido-envivo{
+        width: 400px;
+        padding-top:100px;
+        padding-left:0;
+    } 
+    .contenido-envivo div p{
+        padding: 20px 10px;
+        
+    }
+
+    .main-diferencias{
+        background-color: var(--colorPrimario2);
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;        
+    }
+    .parrafo-web{
+        display: none;
+    }
+    .parrafo-mobile{
+        display: flex;
+    }
+    .main-diferencias p{
+        padding-top: 40px;
+    }
+    
 }
