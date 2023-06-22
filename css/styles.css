@@ -234,10 +234,7 @@ main{
     flex-basis: 30%;
     position: relative;
     padding-top: 30px;
-    
 }
-
-
 
 .cards div img{
     position: absolute;
@@ -301,6 +298,8 @@ footer{
     display: flex;
     justify-content: space-evenly;
     max-width: 1440px;
+    width: 100%;
+    height: 247px;
 }
 
 .footer-logo-redes{
@@ -314,12 +313,16 @@ footer{
 }
 
 .footer-navegacion {
-    columns: 2;/* Espacio entre las columnas */
+    height: 141.14px;
+    width: 392.73px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-lista1 ul,
 .footer-lista2 ul {
-    padding: 50px;
+    padding-top: 40px;
     list-style: none;
 }
 
@@ -337,12 +340,24 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
+    
+}
+.footer-form{
+    width: 273;
+    height: 48px ;
+    display: flex;
+}
+
+#email{
+    height: 44px;
+    width: 163px;
 }
 
 .footer-form input{
     border-radius: 50px;
     font-size: 13.18px;
-    padding: 20px;
+    padding: 10px;
+    border: none;
 }
 
 .footer-form button{
@@ -354,6 +369,9 @@ footer{
     font-weight: 500;
     font-size: 13.1806px;
     line-height: 19px;
+    cursor: pointer;
+    border: none;
+    
 }
 
 .footer-copyright h6{
@@ -478,6 +496,8 @@ footer{
 .cards div{
     flex-basis: 90%;
     margin-top: 50px;
+    background-color: #FFFFFF;
+    
 }
 .top-tenistas .card-tenista-Sanyo,
 .top-tenistas .card-tenista-Navarro {
@@ -493,13 +513,64 @@ footer{
     height: 366px;
 }
 
-
-
 .main-equipo h2 {
     text-align: center;
     width: 324px;
     height: 192px;
-
 }
+.main-boton-goforit a{
+    background-color:#232C50;
+    color: #FFFFFF;
+}
+
+footer{
+    flex-direction: column;
+    align-items: flex-start ;
+    position: relative;
+    height: 537px;
+}
+.footer-logo-redes {
+    order:3 ;
+  }
+
+  .footer-navegacion {
+    order: 1;
+  }
+  .footer-copyright {
+    position: absolute;
+    bottom: 30px;
+  }
+  .footer-redes {
+    order: 1;
+  }
+  
+  .footer-logo {
+    order: 2;
+  }
+  .footer-redes img {
+    padding-right: 35px;
+}
+.footer-form{
+    width: 380px;
+    height: 48px;
+    display: flex;
+}
+#email{
+    height: 44px;
+    width: 308px;
+}
+.footer-navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-lista1 ul,
+.footer-lista2 ul {
+    padding: 20px;
+    
+}
+.footer-lista2 {
+    padding-left: 80px;
+}
+
 
 }
