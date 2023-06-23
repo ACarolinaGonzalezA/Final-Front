@@ -112,13 +112,10 @@ main{
 }
 .main-envivo img {
     flex-basis: 50%;
-    width: 540px;
-    height: 461.07px;
 }
 
 .contenido-envivo{
     flex-basis: 50%;
-    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
