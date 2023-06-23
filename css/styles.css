@@ -112,7 +112,7 @@ section .main-envivo{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 50px 150px;
+    padding: 50px 140px;
 }
 .main-envivo img {
     flex-basis: 50%;
@@ -124,7 +124,7 @@ article.contenido-envivo {
     display: flex;
     flex-direction: column;
     width: 450px;
-    padding: 50px 20px 50px 40px;
+    padding: 50px 10px 50px 60px;
 } 
 
 .contenido-envivo h2{    
