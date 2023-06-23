@@ -523,7 +523,7 @@ footer{
 
 .main-subtitulo {
     padding:40px;
-    margin: 10px;
+    margin: 0px;
 }
 
 .main-subtitulo h2{
@@ -610,10 +610,9 @@ footer{
 
   .footer-redes img{
     display: inline-block;
-    padding:0px 30px 0 30px ;
-    
-  }
- 
+    padding:0px 25px 0 25px ;
+    }
+
 .footer-form{
     width: 380px;
     height: 48px;
