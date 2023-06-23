@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
 }
-
 header{
     display: flex;
     align-items: center;
@@ -21,34 +20,68 @@ header{
     padding: 65px 165px;
     max-width: 1440px;
 }
-
+header h1 img {
+    display: flex;
+    width: 107.68px;
+    height: 25px;
+}
+header nav{
+    display: flex;
+}
 header nav ul {
     display: flex;
     align-items: center;
     list-style: none;
     font-size: 13px;
 }
-
-header nav ul li{
+header nav li{
     display: inline-block;
-    padding: 15px ; 
-}
-header nav li a {
-    text-decoration: none;
+    padding-right: 20px ; 
     font-weight: 500;
     line-height: 22.89px;
     color: #242E52;
 }
-
-header a:link{
+header nav a {
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 165px;
+    max-width: 1440px;
+}
+header h1 img {
+    display: flex;
+    width: 107.68px;
+    height: 25px;
+}
+header nav{
+    width: 397px;
+    height: 23px;
+    display: flex;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 13px;
+}
+header nav li{
+    display: inline-block;
+    padding-right: 20px ; 
+    font-weight: 500;
+    line-height: 22.89px;
+    color: #242E52;
+}
+header nav a {
+    text-decoration: none;
     color:#242E52;
 }
-
 header a:active{
     color: rgba(36, 46, 82, 0.6);
 }
-
-.kangrebur {
+header img {
     display: none;
 }
 
@@ -62,6 +95,8 @@ header a:active{
     font-size: 13.18px;
     font-weight: 500;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 main{
@@ -77,6 +112,8 @@ main{
 }
 .main-envivo img {
     flex-basis: 50%;
+    width: 540px;
+    height: 461.07px;
 }
 
 .contenido-envivo{
@@ -153,7 +190,6 @@ main{
     width: 100%;
 }
 
-
 .card{
     display: flex;
     flex-basis: 50%;
@@ -206,24 +242,27 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
-.main-subtitulo {
-    color: #242E53;
-    font-size: 39.21px;
-    text-align: center;
+.main-subtitulo { 
     padding:50px;
+    margin: 50px;
+}
+
+.main-subtitulo h2{
+    font-size: 39.214px;
+    color: #242E53;
+    text-align: center;
     font-weight:700;
     line-height: 61.41px;
     letter-spacing: -0.01em;
-    margin: 50px;
 }
 
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
 }
 
 .cards div{
@@ -275,7 +314,7 @@ main{
     padding: 80px 150px;
 }
 
-.main-equipo h2{
+.equipo-h2 h2{
     color:#FFFFFF;
     font-size: 40px;
     width: 399px;
@@ -284,8 +323,11 @@ main{
     line-height: 48px;
     letter-spacing: -0.005em;
 }
+.equipo-h2-mobile{
+    display: none;
+}
 
-.main-boton-goforit a{
+.main-boton-goforit button{
     background-color: #FFFFFF;
     color: #8B48BF;
     font-weight: 500;
@@ -395,14 +437,14 @@ footer{
     header nav {
         display: none;
     }
-    .kangrebur {
+    header img {
         display: flex;
-        font-size: 50px;
+        width: 46.88px;
+        height: 41.25px;
     }
     header .contacto{
         display: none;
     }
-
     main{
         max-width: 480px;
     }
@@ -445,17 +487,15 @@ footer{
         padding-top: 40px;
     }
     .main-points{
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 50px 0;  
-        
+        padding: 50px 0 0 0;  
+        background-color: #FFFFFF;
     }
     .card{
         position: relative;
         padding: 0 ;
     }
-    
     .card-text{
         padding-right: 0;
         padding-left: 30px;
@@ -468,8 +508,9 @@ footer{
         margin-bottom: 0px;
     }
     .card-text p {
-        padding-right: 40px;
+        padding-right: 55px;
         padding-left: 25px;
+        
     }
     .circle {
     position: absolute;
@@ -477,15 +518,12 @@ footer{
     left: 20px;
 }
 .top-tenistas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 0px;
 }
 
 .main-subtitulo {
     padding:40px;
-    margin: 30px;
+    margin: 10px;
 }
 
 .main-subtitulo h2{
@@ -496,8 +534,6 @@ footer{
 .cards div{
     flex-basis: 90%;
     margin-top: 50px;
-    background-color: #FFFFFF;
-    
 }
 .top-tenistas .card-tenista-Sanyo,
 .top-tenistas .card-tenista-Navarro {
@@ -512,13 +548,30 @@ footer{
     padding: 40px 50px;
     height: 366px;
 }
+.equipo-h2 h2{
+    display: none;
+}
+.equipo-h2-mobile {
+    display: block;
+
+}
+.equipo-h2-mobile span{
+    display: block;
+    color:#FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    text-align: center;
+}
 
 .main-equipo h2 {
     text-align: center;
     width: 324px;
     height: 192px;
+    
+    
 }
-.main-boton-goforit a{
+.main-boton-goforit button{
     background-color:#232C50;
     color: #FFFFFF;
 }
@@ -557,8 +610,8 @@ footer{
 
   .footer-redes img{
     display: inline-block;
-    justify-content: space-between;
-    align-items: center;
+    padding:0px 30px 0 30px ;
+    
   }
  
 .footer-form{
