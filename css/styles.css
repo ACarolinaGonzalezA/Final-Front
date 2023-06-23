@@ -124,7 +124,7 @@ article.contenido-envivo {
     display: flex;
     flex-direction: column;
     width: 450px;
-    padding: 50px 20px 50px 100px;
+    padding: 50px 20px 50px 40px;
 } 
 
 .contenido-envivo h2{    
