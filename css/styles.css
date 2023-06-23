@@ -150,7 +150,7 @@ article.contenido-envivo {
     color: #000000;;
 }
 
-.main-diferencias{
+section.main-diferencias{
     background-color: var(--colorPrimario1);
     display: flex;
     justify-content: space-between;
@@ -180,7 +180,7 @@ article.contenido-envivo {
     display: none;
 }
 
-.main-points{
+section.main-points{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -238,7 +238,7 @@ article.contenido-envivo {
     color: #FFFFFF;
 }
 
-.top-tenistas{
+section.top-tenistas{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,7 +306,7 @@ article.contenido-envivo {
     margin: 40px;
 }
 
-.main-equipo {
+section.main-equipo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -433,8 +433,6 @@ footer{
 
 @media screen and (max-width: 480px){
     header{
-        display: flex;
-        justify-content: space-between;
         padding: 40px 56px;
     }
     header nav {
@@ -451,12 +449,16 @@ footer{
     main{
         max-width: 480px;
     }
+    section .main-envivo{
+        width: 100%;
+    }
 
     .main-envivo{
         padding: 40px 40px;
         display: flex;
         flex-direction: column;
         justify-content:space-between ;
+        align-items: center;
         
     }
     .main-envivo img {
@@ -464,7 +466,7 @@ footer{
         height: 341.53px;
     }
 
-    .contenido-envivo{
+    article.contenido-envivo{
         width: 400px;
         padding-top:100px;
         padding-left:0;
@@ -474,7 +476,7 @@ footer{
         
     }
 
-    .main-diferencias{
+    section.main-diferencias{
         background-color: var(--colorPrimario2);
         display: flex;
         flex-direction: column;
@@ -489,7 +491,7 @@ footer{
     .main-diferencias p{
         padding-top: 40px;
     }
-    .main-points{
+    section.main-points{
         flex-direction: column;
         justify-content: flex-start;
         padding: 50px 0 0 0;  
@@ -520,7 +522,7 @@ footer{
     top:5px;
     left: 20px;
 }
-.top-tenistas{
+section.top-tenistas{
     padding: 0px;
 }
 
@@ -543,7 +545,7 @@ footer{
     display: none;
 }
 
-.main-equipo {
+section.main-equipo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -620,7 +622,9 @@ footer{
     width: 380px;
     height: 48px;
     display: flex;
+    flex-wrap: wrap;
 }
+
 #email{
     height: 44px;
     width: 308px;
