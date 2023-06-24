@@ -20,7 +20,7 @@ header{
     padding: 65px 165px;
     max-width: 1440px;
 }
-header h1 img {
+header div img {
     display: flex;
     width: 107.68px;
     height: 25px;
@@ -411,7 +411,6 @@ footer{
     font-weight: 500;
     font-size: 13.1806px;
     line-height: 19px;
-    cursor: pointer;
     border: none;
     
 }
@@ -423,12 +422,14 @@ footer{
     line-height: 18px;
 }
 
-.contacto:hover{
+.contacto button:hover{
     background-color: rgba(139, 72, 191, 0.7); 
+    cursor: pointer;
 }
 
-.boton-go:hover{
+.boton-go button:hover{
     background-color: rgb(214, 208, 219, 0.5);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 480px){
